@@ -1,0 +1,19 @@
+\begin{table}[!htbp]
+\centering
+\caption{Independent check with a 35-digit Taylor-series ODE integration (\texttt{mpmath.odefun}, tolerance $10^{-28}$). Absolute errors of the event and phase estimators against the quadrature reference, and $|w'|$ evaluated at the quadrature's periapsis angle.}
+\label{tab:hp}
+\small
+\begin{tabular}{lcccc}
+\toprule
+Case & shift (rad) & event err. & phase err. & $|w'(\Phi_{\rm ref})|$ \\
+\midrule
+Mercury-like & $5.0\times10^{-7}$ & $2.0\times10^{-42}$ & $5.3\times10^{-40}$ & $2.4\times10^{-37}$ \\
+e0.3\_rho0.05 & 0.148 & $1.1\times10^{-36}$ & $1.5\times10^{-34}$ & $2.0\times10^{-37}$ \\
+e0.3\_rho0.5 & 2.24 & $2.5\times10^{-34}$ & $3.1\times10^{-33}$ & $3.7\times10^{-35}$ \\
+e0.3\_rho0.95 & 12.4 & $6.3\times10^{-33}$ & $1.7\times10^{-33}$ & $9.5\times10^{-35}$ \\
+e0.9\_rho0.99 & 13.2 & $6.7\times10^{-31}$ & $6.6\times10^{-31}$ & $6.0\times10^{-33}$ \\
+e0.001\_rho0.05 & 0.163 & $6.3\times10^{-38}$ & $1.9\times10^{-34}$ & $1.5\times10^{-39}$ \\
+cubic\_eps0.01\_e0.3\_g0.003 & 0.229 & $8.8\times10^{-36}$ & $2.2\times10^{-34}$ & $2.5\times10^{-36}$ \\
+\bottomrule
+\end{tabular}
+\end{table}

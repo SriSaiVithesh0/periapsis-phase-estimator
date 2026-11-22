@@ -1,0 +1,19 @@
+\begin{table}[!htbp]
+\centering
+\caption{Solver comparison on the 40-configuration grid, same-trajectory protocol with $\psi$ in the error control. Median absolute errors in radians.}
+\label{tab:solvers}
+\begin{tabular}{llcccc}
+\toprule
+Solver & rtol & phase wins & median ratio & median event err. & median phase err. \\
+\midrule
+RK45 & $10^{-10}$ & 33 / 40 & 3.03 & $1.5\times10^{-11}$ & $5.2\times10^{-12}$ \\
+RK45 & $10^{-12}$ & 35 / 40 & 3.34 & $1.0\times10^{-13}$ & $1.9\times10^{-14}$ \\
+DOP853 & $10^{-10}$ & 23 / 40 & 1.64 & $2.2\times10^{-11}$ & $1.2\times10^{-11}$ \\
+DOP853 & $10^{-12}$ & 24 / 40 & 1.70 & $3.2\times10^{-13}$ & $1.8\times10^{-13}$ \\
+LSODA & $10^{-10}$ & 15 / 40 & 0.92 & $1.0\times10^{-10}$ & $1.9\times10^{-10}$ \\
+LSODA & $10^{-12}$ & 18 / 40 & 0.88 & $3.4\times10^{-12}$ & $5.4\times10^{-12}$ \\
+Radau & $10^{-10}$ & 32 / 40 & 3.38 & $1.2\times10^{-13}$ & $4.6\times10^{-14}$ \\
+Radau & $10^{-12}$ & 34 / 40 & 5.06 & $1.2\times10^{-14}$ & $1.5\times10^{-15}$ \\
+\bottomrule
+\end{tabular}
+\end{table}

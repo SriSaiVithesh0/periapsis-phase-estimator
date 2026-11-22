@@ -1,0 +1,16 @@
+\begin{table}[!htbp]
+\centering
+\caption{Relative error of the periapsis shift over the 40-configuration grid (ODE rows: rtol $=10^{-12}$, $\mathrm{atol}=10^{-16}$) against the 70-digit reference.}
+\label{tab:baselines}
+\begin{tabular}{lcc}
+\toprule
+Method & median & maximum \\
+\midrule
+ODE, DOP853, event extractor & $1.9\times10^{-12}$ & $4.0\times10^{-8}$ \\
+ODE, DOP853, phase extractor & $2.9\times10^{-13}$ & $2.5\times10^{-12}$ \\
+closed form $K(m)$, double precision, subtract $2\pi$ & $1.2\times10^{-15}$ & $1.9\times10^{-11}$ \\
+quadrature, double precision, subtract $2\pi$ & $8.4\times10^{-16}$ & $6.6\times10^{-11}$ \\
+quadrature, cancellation-free integrand & $7.6\times10^{-17}$ & $5.9\times10^{-16}$ \\
+\bottomrule
+\end{tabular}
+\end{table}

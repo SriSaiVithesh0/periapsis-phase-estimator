@@ -1,0 +1,16 @@
+\begin{table}[!htbp]
+\centering
+\caption{Four comparison protocols at $\mathrm{rtol}=10^{-12}$ (80 runs: 40 configurations, \texttt{RK45} and \texttt{DOP853}), grouped by $\rho$; each cell gives phase wins and the median ratio of event error to phase error. \emph{End-to-end}: event estimator from a plain integration, phase estimator from a separate integration with $\psi$ appended to the state and included in the error control. \emph{$\psi$ in control}: both estimators from the one augmented trajectory. \emph{Observable only}: as before, but $\psi$ excluded from the error control (huge \texttt{atol} on that component), so the trajectory is not better controlled than in the plain run. \emph{Cost-matched}: event estimator from a plain run whose tolerance is tightened until it uses at least as many right-hand-side evaluations as the augmented run, against the phase estimator of that run.}
+\label{tab:protocol}
+\small
+\begin{tabular}{lcccccccc}
+\toprule
+ & \multicolumn{2}{c}{end-to-end} & \multicolumn{2}{c}{$\psi$ in control} & \multicolumn{2}{c}{observable only} & \multicolumn{2}{c}{cost-matched} \\
+ & wins & ratio & wins & ratio & wins & ratio & wins & ratio \\
+\midrule
+$\rho\le0.05$ & 30 / 30 & $3.1\times10^{3}$ & 30 / 30 & $1.3\times10^{3}$ & 30 / 30 & 307 & 30 / 30 & $1.6\times10^{3}$ \\
+$0.05<\rho\le0.5$ & 20 / 20 & 4.37 & 16 / 20 & 1.75 & 8 / 20 & 0.922 & 10 / 20 & 0.964 \\
+$\rho>0.5$ & 20 / 30 & 1.16 & 13 / 30 & 0.978 & 7 / 30 & 0.398 & 6 / 30 & 0.667 \\
+\bottomrule
+\end{tabular}
+\end{table}

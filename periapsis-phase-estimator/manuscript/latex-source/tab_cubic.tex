@@ -1,0 +1,15 @@
+\begin{table}[!htbp]
+\centering
+\caption{Cubic-perturbation family: phase-accumulator wins out of 36 configurations, and the median and minimum event/phase relative-error ratio.}
+\label{tab:cubic}
+\begin{tabular}{llccc}
+\toprule
+Solver & rtol & phase wins & median ratio & minimum ratio \\
+\midrule
+RK45 & $10^{-10}$ & 35 / 36 & 44.0 & 0.89 \\
+DOP853 & $10^{-10}$ & 36 / 36 & 49.7 & 1.88 \\
+RK45 & $10^{-12}$ & 35 / 36 & 60.0 & 0.35 \\
+DOP853 & $10^{-12}$ & 35 / 36 & 21.1 & 0.72 \\
+\bottomrule
+\end{tabular}
+\end{table}

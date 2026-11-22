@@ -1,0 +1,15 @@
+\begin{table}[!htbp]
+\centering
+\caption{Least-squares fits $\log_{10}|\text{abs.\ error}| = a + b\,\log_{10}\Delta\varphi$ over the 40 grid configurations at rtol $=10^{-12}$ (empirical, not a derived law).}
+\label{tab:fits}
+\begin{tabular}{llccc}
+\toprule
+Solver & extractor & slope $b$ & intercept $a$ & $R^2$ \\
+\midrule
+RK45 & event & 0.44 & -11.86 & 0.44 \\
+RK45 & phase & 1.23 & -12.96 & 0.82 \\
+DOP853 & event & 0.19 & -11.61 & 0.19 \\
+DOP853 & phase & 1.07 & -12.62 & 0.93 \\
+\bottomrule
+\end{tabular}
+\end{table}
