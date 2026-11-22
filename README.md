@@ -4,7 +4,7 @@
 
 **Author:** Uppala Sri Sai Vithesh  
 **Affiliation:** Independent Student Researcher, Andhra Pradesh, India  
-**Contact:** uppalasrisaivithesh99@gmail.com  
+**Contact:** srisaivitheshuppala99@gmail.com  
 **Research area:** General Relativity · Computational Physics · Numerical Methods  
 **Manuscript date:** 22 November 2026
 
